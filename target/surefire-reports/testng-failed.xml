@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [AutomtionTest]">
+  <test name="WebTest(failed)">
+    <classes>
+      <class name="autotest.suites.steps.project.ProjectTest">
+        <methods>
+          <include name="StartSession"/>
+          <include name="Dispose"/>
+          <include name="ReopenTask"/>
+        </methods>
+      </class> <!-- autotest.suites.steps.project.ProjectTest -->
+    </classes>
+  </test> <!-- WebTest(failed) -->
+</suite> <!-- Failed suite [AutomtionTest] -->

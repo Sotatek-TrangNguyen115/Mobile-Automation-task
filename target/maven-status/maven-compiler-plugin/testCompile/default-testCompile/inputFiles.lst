@@ -1,0 +1,15 @@
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\suites\steps\auth\TodoistAuthTest.java
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\constants\DriverType.java
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\models\DueModel.java
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\base\BaseTest.java
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\driver\ObjectExtension.java
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\driver\DriverManager.java
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\models\TaskModel.java
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\driver\DriverManagerFactory.java
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\driver\AndroidDriverManager.java
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\models\CreateNewProject.java
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\suites\TestTodoistFactory.java
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\models\CreateTaskInput.java
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\driver\ChromeDriverManager.java
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\models\CreateNewProjectResponse.java
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\suites\steps\project\ProjectTest.java

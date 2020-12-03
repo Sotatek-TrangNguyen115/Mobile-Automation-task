@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 72.206 sec <<< FAILURE!
+ReopenTask(autotest.suites.steps.project.ProjectTest)  Time elapsed: 15.546 sec  <<< FAILURE!
+java.lang.AssertionError: Task TaskNameFFRmx not appear in the screen expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at autotest.suites.steps.project.ProjectTest.verifyReopenedTask(ProjectTest.java:166)
+	at autotest.suites.steps.project.ProjectTest.ReopenTask(ProjectTest.java:106)
+
