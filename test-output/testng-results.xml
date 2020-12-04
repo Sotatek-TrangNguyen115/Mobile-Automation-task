@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="67457" started-at="2020-12-03T10:52:58Z" finished-at="2020-12-03T10:54:06Z">
+  <suite name="Default suite" duration-ms="71741" started-at="2020-12-04T08:32:25Z" finished-at="2020-12-04T08:33:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="67457" started-at="2020-12-03T10:52:58Z" finished-at="2020-12-03T10:54:06Z">
+    <test name="Default test" duration-ms="71741" started-at="2020-12-04T08:32:25Z" finished-at="2020-12-04T08:33:37Z">
       <class name="autotest.suites.steps.project.ProjectTest">
-        <test-method status="PASS" signature="StartSession()[pri:0, instance:autotest.suites.steps.project.ProjectTest@60410cd]" name="StartSession" is-config="true" duration-ms="5687" started-at="2020-12-03T17:52:53Z" finished-at="2020-12-03T17:52:58Z">
+        <test-method status="PASS" signature="StartSession()[pri:0, instance:autotest.suites.steps.project.ProjectTest@433d61fb]" name="StartSession" is-config="true" duration-ms="7551" started-at="2020-12-04T15:32:17Z" finished-at="2020-12-04T15:32:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartSession -->
-        <test-method status="PASS" signature="createNewProject()[pri:1, instance:autotest.suites.steps.project.ProjectTest@60410cd]" name="createNewProject" duration-ms="37159" started-at="2020-12-03T17:52:58Z" finished-at="2020-12-03T17:53:35Z">
+        <test-method status="PASS" signature="createNewProject()[pri:1, instance:autotest.suites.steps.project.ProjectTest@433d61fb]" name="createNewProject" duration-ms="36820" started-at="2020-12-04T15:32:25Z" finished-at="2020-12-04T15:33:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewProject -->
-        <test-method status="PASS" signature="createTask()[pri:2, instance:autotest.suites.steps.project.ProjectTest@60410cd]" name="createTask" duration-ms="16282" started-at="2020-12-03T17:53:35Z" finished-at="2020-12-03T17:53:52Z">
+        <test-method status="PASS" signature="createTask()[pri:2, instance:autotest.suites.steps.project.ProjectTest@433d61fb]" name="createTask" duration-ms="17609" started-at="2020-12-04T15:33:02Z" finished-at="2020-12-04T15:33:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTask -->
-        <test-method status="PASS" signature="ReopenTask()[pri:3, instance:autotest.suites.steps.project.ProjectTest@60410cd]" name="ReopenTask" duration-ms="13967" started-at="2020-12-03T17:53:52Z" finished-at="2020-12-03T17:54:06Z">
+        <test-method status="PASS" signature="ReopenTask()[pri:3, instance:autotest.suites.steps.project.ProjectTest@433d61fb]" name="ReopenTask" duration-ms="17239" started-at="2020-12-04T15:33:19Z" finished-at="2020-12-04T15:33:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReopenTask -->
-        <test-method status="PASS" signature="Dispose()[pri:0, instance:autotest.suites.steps.project.ProjectTest@60410cd]" name="Dispose" is-config="true" duration-ms="1331" started-at="2020-12-03T17:54:06Z" finished-at="2020-12-03T17:54:07Z">
+        <test-method status="PASS" signature="Dispose()[pri:0, instance:autotest.suites.steps.project.ProjectTest@433d61fb]" name="Dispose" is-config="true" duration-ms="2404" started-at="2020-12-04T15:33:37Z" finished-at="2020-12-04T15:33:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Dispose -->

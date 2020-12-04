@@ -9,7 +9,7 @@ C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\
 C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\driver\AndroidDriverManager.java
 C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\models\CreateNewProject.java
 C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\suites\TestTodoistFactory.java
+C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\constants\ConfigProperties.java
 C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\models\CreateTaskInput.java
-C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\driver\ChromeDriverManager.java
 C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\models\CreateNewProjectResponse.java
 C:\Users\Admin\eclipse-workspace\automation-test-project\src\test\java\autotest\suites\steps\project\ProjectTest.java

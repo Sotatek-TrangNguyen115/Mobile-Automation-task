@@ -38,19 +38,6 @@ public class BaseTest<T extends WebElement> {
 		driverType = type;
 	}
 	
-	private String getWebDriverPath() {
-		String driverPath = "";
-		switch(driverType) {
-			case CHROME:
-				driverPath = "drivers/chromedriver.exe";
-			break;
-			default:
-				driverPath = "drivers/chromedriver.exe";
-				break;
-		}
-		return driverPath;
-	}
-	
 	protected T tryFindClickableElementById(String id) {
 		webDriverWait.until(ExpectedConditions.elementToBeClickable(By.id(id))); 
 		return findElementById(id);
@@ -78,7 +65,7 @@ public class BaseTest<T extends WebElement> {
 			case IOS:
 				return ((IOSDriver<T>)driver).findElementById(id);
 			default:
-				return driver.findElement(By.id(id));
+				return null;
 		}
 	}
 	
@@ -89,7 +76,7 @@ public class BaseTest<T extends WebElement> {
 			case IOS:
 				return ((IOSDriver<T>)driver).findElementByXPath(xPath);
 			default:
-				return driver.findElement(By.xpath(xPath));
+				return null;
 		}
 	}
 	
@@ -100,22 +87,12 @@ public class BaseTest<T extends WebElement> {
 			case IOS:
 				return ((IOSDriver<T>)driver).findElementsById(id);
 			default:
-				return driver.findElements(By.id(id));
+				return null;
 		}
 	}
 	
 	@BeforeSuite
 	public void StartSession() throws Exception {
-		switch(driverType) {
-			case CHROME:
-			case IE:
-			case FIREFOX:
-			case EDGE:
-				URL url = BaseTest.class.getClassLoader().getResource(getWebDriverPath());
-				System.setProperty("webdriver.chrome.driver", url.getPath());
-				break;
-		}
-		
 		driverManager = DriverManagerFactory.getDriverManager(driverType);
 		driver = driverManager.getWebDriver();
 		webDriverWait = new WebDriverWait(driver, 10);

@@ -20,6 +20,7 @@ import autotest.base.BaseTest;
 import autotest.models.CreateNewProject;
 import autotest.models.TaskModel;
 import autotest.suites.steps.auth.TodoistAuthTest;
+import constants.ConfigProperties;
 import constants.DriverType;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
@@ -42,10 +43,7 @@ public class ProjectTest extends TodoistAuthTest {
 		super(type);
 		createNewProject = newProject;
 		newTaskName = "TaskName" + RandomStringUtils.random(5, true, false);
-		Properties prop = new Properties();
-		InputStream input = getClass().getClassLoader().getResourceAsStream("config.properties");
-	    prop.load(input);
-		api_token = prop.getProperty("token");
+		api_token = ConfigProperties.getInstance().systemProperties().getProperty("token");
 	}
 	
 	@Test(priority=1)
@@ -92,6 +90,7 @@ public class ProjectTest extends TodoistAuthTest {
 			if(taskName.equals(newTaskName)) {
 				MobileElement checkMark = taskEle.findElementById("com.todoist:id/checkmark");
 				checkMark.click();
+				break;
 			}
 		}
 		Thread.sleep(2000);
@@ -102,6 +101,7 @@ public class ProjectTest extends TodoistAuthTest {
 				.post(REOPEN_TASK_URI);
 		int statusCode = response.getStatusCode();
 		Assert.assertEquals(statusCode, 204, "Can not reopen task");
+		Thread.sleep(5000);
 		showProjects();
 		List<MobileElement> listProject = findElementsById("android:id/content");
 		for(MobileElement mobileEle : listProject) {
@@ -157,6 +157,7 @@ public class ProjectTest extends TodoistAuthTest {
 		for(TaskModel task : allTasks) {
 			if(task.getContent().equals(newTaskName) && task.getProject_id() == projectId) {
 				taskId = task.getId();
+				break;
 			}
 		}
 	}

@@ -1,12 +1,43 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 72.206 sec <<< FAILURE!
-ReopenTask(autotest.suites.steps.project.ProjectTest)  Time elapsed: 15.546 sec  <<< FAILURE!
-java.lang.AssertionError: Task TaskNameFFRmx not appear in the screen expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at autotest.suites.steps.project.ProjectTest.verifyReopenedTask(ProjectTest.java:166)
-	at autotest.suites.steps.project.ProjectTest.ReopenTask(ProjectTest.java:106)
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 64.547 sec <<< FAILURE!
+ReopenTask(autotest.suites.steps.project.ProjectTest)  Time elapsed: 10.413 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-EH2F7BB', ip: '10.2.41.195', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.todoist.activity.HomeAc..., appPackage: com.todoist, databaseEnabled: false, desired: {appActivity: com.todoist.activity.HomeAc..., appPackage: com.todoist, deviceName: emulator-5554, platformName: Android}, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenSize: 1080x2220, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, platform: LINUX, platformName: Android, platformVersion: 9, takesScreenshot: true, warnings: {}, webStorageEnabled: false}
+Session ID: 3727d69e-402e-498a-9661-e8e79e04f5ab
+*** Element info: {Using=id, value=com.todoist:id/text}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at io.appium.java_client.DefaultGenericMobileElement.findElement(DefaultGenericMobileElement.java:65)
+	at io.appium.java_client.MobileElement.findElement(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.findElement(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementById(RemoteWebElement.java:221)
+	at io.appium.java_client.DefaultGenericMobileElement.findElementById(DefaultGenericMobileElement.java:73)
+	at io.appium.java_client.MobileElement.findElementById(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.findElementById(AndroidElement.java:1)
+	at autotest.suites.steps.project.ProjectTest.ReopenTask(ProjectTest.java:89)
 
